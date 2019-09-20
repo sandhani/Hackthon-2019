@@ -1,0 +1,77 @@
+<html>
+
+<head>
+
+  <link href="form.css" rel="stylesheet" type="text/css" >
+
+</head>
+
+
+<body class="low-risk">
+<div class="container">
+  <form id="contact" action="http://0.0.0.0:2345/predict" method="post">
+    <h3 align="center"> DISASTER PREDICTION MODEL </h3>
+    <h4>Fill in the details</h4>
+    <fieldset>
+      <input placeholder="Capture event ID" type="text" id="eventID" tabindex="1" name="CaptureEventID">
+    </fieldset>
+    <fieldset>
+      <!-- <input placeholder="Your Email Address" type="email" tabindex="2" > -->
+      <label for="Species">Species : </label>
+      <select class="select-css"  name="Species" id="species">
+        <option value="blank"></option>
+        <option value="elephnat">Elephant</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="cattle">Cattle</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <!-- <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required> -->
+      <label for="AltitudeMoved">Altitude moved :</label>
+      <select class="select-css" name="AltitudeMoved" id="altitude">
+        <option value="blank"></option>
+        <option value=2>2</option>
+        <option value=1>1</option>
+        <option value=0>0</option>
+        <option value=-1>-1</option>
+        <option value=-2>-2</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <!-- <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required> -->
+      <label for="DistanceMoved">Distance moved :</label>
+      <select class="select-css" name="DistanceMoved" id="distance">
+        <option value="blank"></option>
+        <option value=0>0</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <!-- <textarea placeholder="Type your message here...." tabindex="5" required autofocus></textarea> -->
+      <label for="Tensed">Tensed or not :</label>
+      <select class="select-css" id="tensed" name="Tensed">
+        <option value="blank"></option>
+        <option value=0>0</option>
+        <option value=1>1</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <button name="submit"  id="contact-submit" onclick="submitValue()" >Submit</button>
+    </fieldset>
+
+    <h2 id="result" align="center"></h2>
+
+  </form>
+
+  <h3> Here you can see the <a href="ui.html" align="right">Results of animal movement</a> ! </h3>
+
+</div>
+
+</body>
+<script src ="script.js"></script>
+</html>
