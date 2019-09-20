@@ -1,4 +1,4 @@
-# Hackthon-2019ry
+# Hackthon-2019
 
 Flask App run:
 1) virtualenv venv
